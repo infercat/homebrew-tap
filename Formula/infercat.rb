@@ -6,21 +6,21 @@
 class Infercat < Formula
   desc "Share the model on your machine with friends: one binary, one invite code, a browser"
   homepage "https://infercat.ai"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/infercat/infercat/releases/download/v0.1.3/infercat_0.1.3_darwin_amd64.tar.gz"
-      sha256 "ae7108d76267c06a2e8d69eeedc012c22df083c99a1780d4434747d39b7808c5"
+      url "https://github.com/infercat/infercat/releases/download/v0.1.4/infercat_0.1.4_darwin_amd64.tar.gz"
+      sha256 "ad500a58ba01008224e736193ecdcc2829b3735ef401e2ce85a61476f19a1d73"
 
       define_method(:install) do
         bin.install "infercat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/infercat/infercat/releases/download/v0.1.3/infercat_0.1.3_darwin_arm64.tar.gz"
-      sha256 "363e15c3393d86ed3de5b85695746001a9882f236aba797c6b9547b31b4013e2"
+      url "https://github.com/infercat/infercat/releases/download/v0.1.4/infercat_0.1.4_darwin_arm64.tar.gz"
+      sha256 "4b64b2cec4e7a7e29c996c53c386a4e3441d70c5d419e4953facd54eaaae6fee"
 
       define_method(:install) do
         bin.install "infercat"
@@ -30,16 +30,16 @@ class Infercat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/infercat/infercat/releases/download/v0.1.3/infercat_0.1.3_linux_amd64.tar.gz"
-      sha256 "efc83344e2292a352582c2778d33ddf1b00e34190daa8ec51e941b8ab88eb125"
+      url "https://github.com/infercat/infercat/releases/download/v0.1.4/infercat_0.1.4_linux_amd64.tar.gz"
+      sha256 "887ff824ae7e9adf8d70e2257098459b9bd00f1f91c464817fdfa95d10987812"
 
       define_method(:install) do
         bin.install "infercat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/infercat/infercat/releases/download/v0.1.3/infercat_0.1.3_linux_arm64.tar.gz"
-      sha256 "d92248dd37fcc7400a3bb90a35b2929a5c4c5e6cc0ba5bcc04cc1704f7cf4a2c"
+      url "https://github.com/infercat/infercat/releases/download/v0.1.4/infercat_0.1.4_linux_arm64.tar.gz"
+      sha256 "b6889f90a998758b6c539699707c1a0b5cbc2538f3881dcc39509502746e2216"
 
       define_method(:install) do
         bin.install "infercat"
